@@ -40,7 +40,7 @@ function indexAccess () {
   console.assert(people[4] === 'Julia')
 
   // return the third item from the "people" array here
-  return(people[3] === 'Jonny')
+  return people[2]
 
 }
 
@@ -51,7 +51,7 @@ function indexAccess () {
 function useLength () {
   const arr = ['a', 'b', 'c']
   arr.length
-
+return arr.length
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,7 +91,7 @@ function useIndexOf () {
   console.assert(arr.indexOf('Z') === -1) // no "Z" in this array
 
   // return the index of the first instance of "T" here
-  MimeTypeArray.indexof('T')
+  return (arr.indexOf('T'))
 
 }
 
@@ -109,7 +109,7 @@ function useJoin () {
 
   // create and return the string 'a-b-c-d-e-f' here
   arr.join('-')
-  return arr
+  return arr.join('-')
 
 }
 

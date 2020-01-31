@@ -41,7 +41,8 @@ function abstractLength () {
 
 function makeLoud () {
   const chorus = 'Who let the dogs out?'
-  return chorus.toUpperCase
+  return chorus.toUpperCase()
+  
 
 }
 
@@ -52,6 +53,6 @@ function makeLoud () {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 
 function makeQuiet (str) {
-  return str.toLowerCase
+  return str.toLowerCase()
 
 }

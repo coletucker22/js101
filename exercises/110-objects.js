@@ -10,6 +10,7 @@
 
 function threeNumbers () {
   const numbers = { numberOne: 1, numberTwo: 2, numberThree: 3 }
+  return numbers
 
 }
 
@@ -19,6 +20,7 @@ function threeNumbers () {
 
 function manyTypes () {
   const diverseObject = { name: 'banana', count: 42, isDelicious: true }
+  return diverseObject
 
 }
 
@@ -30,6 +32,7 @@ function manyTypes () {
 
 function keyAccess () {
   const bestFruit = { name: 'banana', count: 42, isDelicious: true }
+  return (bestFruit['name'] === 'banana')
 
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
@@ -49,6 +52,7 @@ function keyAccess () {
 
 function addKey () {
   const bestFruit = { name: 'banana', count: 42 }
+  
 
   // Note that before a key is assigned it will always return `undefined`
   console.assert(bestFruit['isDelicious'] === undefined)
@@ -56,6 +60,8 @@ function addKey () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
+  bestFruit.color = 'yellow'
+  return bestFruit
 
 }
 
@@ -78,6 +84,17 @@ function largeObject () {
   }
 
   // create a bootcampStudent object here similar to bootcampInstructor and return it
+  const bootcampStudent = {
+    name: 'Cole',
+    email: 'coletucker022@gmail.com',
+    age: 19,
+    heightFeet: 5.8,
+    favoriteColor: 'red',
+    homeTown: 'Houston',
+    pet: 'dog',
+    ownsCar: true
+  }
+
 
 }
 
@@ -102,6 +119,7 @@ function nestedArray () {
   console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
 
   // Return the second item of the nested array favoriteFoods
+  return favoriteFoods
 
 }
 
@@ -123,6 +141,7 @@ function dotNotation () {
       'pho'
     ]
   }
+  return name
 
   // Some examples of using dot notation vs bracket notation:
   console.assert(bootcampInstructor.name === 'Susan')
@@ -138,5 +157,6 @@ function dotNotation () {
   console.assert(bootcampInstructor.favoriteFoods[0] === 'chicken pot pie')
 
   // Return the name of the bootcampInstructor Object using dot notation
-
+return (bootcampInstructor.name === 'Susan')
 }
+

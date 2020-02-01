@@ -19,7 +19,7 @@ function threeNumbers () {
 // Return the object of values in the function below.
 
 function manyTypes () {
-  const diverseObject = { name: 'banana', count: 42, isDelicious: true }
+  const diverseObject = { name: 'banana', count: 42, delicious: true }
   return diverseObject
 
 }
@@ -32,7 +32,7 @@ function manyTypes () {
 
 function keyAccess () {
   const bestFruit = { name: 'banana', count: 42, isDelicious: true }
-  return (bestFruit['name'] === 'banana')
+  return (bestFruit.name)
 
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
@@ -55,9 +55,9 @@ function addKey () {
   
 
   // Note that before a key is assigned it will always return `undefined`
-  console.assert(bestFruit['isDelicious'] === undefined)
-  bestFruit['isDelicious'] = true
-  console.assert(bestFruit['isDelicious'] === true)
+  console.assert(bestFruit['delicious'] === undefined)
+  bestFruit['delicious'] = true
+  console.assert(bestFruit['delicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
   bestFruit.color = 'yellow'
@@ -94,7 +94,7 @@ function largeObject () {
     pet: 'dog',
     ownsCar: true
   }
-
+return bootcampStudent
 
 }
 
@@ -119,7 +119,7 @@ function nestedArray () {
   console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
 
   // Return the second item of the nested array favoriteFoods
-  return favoriteFoods
+  return bootcampInstructor['favoriteFoods'][1]
 
 }
 
@@ -141,7 +141,7 @@ function dotNotation () {
       'pho'
     ]
   }
-  return name
+  return bootcampInstructor.name
 
   // Some examples of using dot notation vs bracket notation:
   console.assert(bootcampInstructor.name === 'Susan')

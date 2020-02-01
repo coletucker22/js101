@@ -108,8 +108,11 @@ function useJoin () {
   console.assert(arr.join('') === 'abcdef') // pass an empty string to have no separator
 
   // create and return the string 'a-b-c-d-e-f' here
-  arr.join('-')
-  return arr.join('-')
+  // arr.join()
+  // arr.join('-')
+  // console.log('ccccccccccccccc', arr.join('-'))
+  const lettersString = arr.join('-')
+  return lettersString
 
 }
 
